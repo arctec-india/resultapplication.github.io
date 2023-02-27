@@ -13,7 +13,7 @@
         min-height: 200vh;
     }
 
-    navbar {
+    header {
         position: fixed;
         top: 0;
         left: 0;
@@ -26,7 +26,7 @@
         z-index: 100000;
     }
 
-    navbar.logo {
+    header.logo {
         position: relative;
         font-weight: 700;
         color: #fff;
@@ -38,19 +38,19 @@
 
     }
 
-    navbar ul {
+    header ul {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    navbar ul li {
+    header ul li {
         position: relative;
         list-style-type: none;
     }
 
-    navbar ul li a {
+    header ul li a {
         position: relative;
         margin: 0 15px;
         text-decoration: none;
@@ -70,14 +70,14 @@
       
     }
 
-    navbar.sticky{
+    header.sticky{
         padding: 5px 100px;
         background-color: #fff;
         color:black;
         
     }
     
-    navbar.sticky ul li a{
+    header.sticky ul li a{
         padding: 5px 100px;
         background-color: #fff;
         color:black;
@@ -87,7 +87,7 @@
 </style>
 
 <body>
-    <div class="navbar">
+    <header>
         <a href="#" class="logo">Logo</a>
         <ul>
             <li><a href="#">Home</a></li>
@@ -97,7 +97,7 @@
             <li><a href="#">Team</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-    </div>
+    </header>
     <div class="home-degin">
     <video width="400"  muted autoplay>
   <source src="https://drive.google.com/uc?id=1im4V6pQU_yBaE8sD1iUnvtwl2yemwOlB" type="video/mp4">
