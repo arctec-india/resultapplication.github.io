@@ -1,49 +1,32 @@
-<title>registration Page</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="nabar-css.css">
+   
 
-<body style="display: grid; justify-content: center; align-items: center ; font-family:sans- serif; font-weight: 600">
-    <style>
-        #abc {
-            background-color: #d5d5d5;
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            height: 450px;
-            width: 350px;
-            text-align: center;
-        }
+<body>
+    <nav>
+        <div>
+        <div class="nav-brand">
+            <img src="https://avatars.githubusercontent.com/u/71009131?s=200&v=4" id="brand-logo">
+            <label id="brand-name">Arch-I-Tech</label>
+        </div>
+        <div class="nav-content">
+            <ul>
+                <li class="nav-link"><a href="#">Home</a></li>
+                <li class="nav-link"> <a href="#">About</a></li>
+                <li class="nav-link"><a href="#">Projects</a></li>
+                <li class="nav-link"> <a href="#">Contact Us</a></li>
 
-    </style>
+            </ul>
+        </div>
+        </div>
+    </nav>
+  
+</body>
+<script>
+     console.log(window.innerWidth);
+    window.addEventListener("scroll", function() {
+        var header = document.querySelector("nav");
+        header.classList.toggle("sticky", window.scrollY > 0);
 
-    <body>
-        <form>
-            <div id="abc">
+    })
 
-                <label style="font-size: 25px">Registration</label>
-                <div class="a">
-
-                    <input type="radio" name="ab"> <label>University</label>
-                    <input type="radio" name="ab"><span>Agency</span>
-                </div>
-
-                <div style="display: grid; gap:10px">
-                    <i class="fa-solid fa-house"></i>
-                    <input type="text" placeholder="Orgnization" style=" width:40vh; padding :10px">
-                    <i class="fa-brands fa-square-facebook"></i> <input type="email" placeholder="Email" style=" width:40vh; padding :10px">
-                    <input type="text" placeholder="Name" style=" width:40vh; padding :10px">
-                    <input type="number" placeholder="Telephone Number" style=" width:40vh; padding :10px">
-                    <input type="password" placeholder="Password" style=" width:40vh; padding :10px">
-                </div>
-
-                <div style=" display: flex ; width: 250px; gap:20px">
-
-                    <span style="font-size: 15px ;"> By clicking Register, you agree to our <a href="#">terms and condtions</a></span>
-                    <input type="submit" value="Register" style=" height: 30px; width: 250px; background-color:#402060 ;color:#f0f0f0">
-
-                </div>
-
-            </div>
-        </form>
-
-    </body>
+</script>
