@@ -72,7 +72,8 @@
     aspect-ratio: 16/9;
      border-bottom-right-radius: 20%;
         }
-#brand-icon{
-  width: 3%;
-  height: 30%;
+
+.Aj-brand-icon{
+   width:50%;
+    height:50%;
 }
