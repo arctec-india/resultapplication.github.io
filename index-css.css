@@ -5,8 +5,11 @@
     
 body {
         background-color: black!important;
-        min-height: 200vh;
+
     }
+.homepage{
+   margin-top:30vh!important;
+}
 .header-img{
    width : 90%;
     height:90%;
